@@ -1,0 +1,11 @@
+<div class = "card-container">
+    <img src="{{this.flags.svg}}" alt="{{this.name.official}} + ' flag'" width='30' height = '20' class="card-country-flag">
+    <p class="card-country-name">{{this.name.official}}</p>
+    </div>
+
+<p><span><b>Capital:</b></span>{{ this.capital }}</p>
+<div><span><b>Population:</b></span>{{ this.population }}</p>
+<div class="country-lang"><b class = 'lang-title'>Languages:</b>
+{{#each languages}}
+<div class = 'lang'>{{this}}</div>
+{{/each}}</div>
